@@ -19,7 +19,7 @@ class Main extends PluginBase{
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool
 	{
 		if($sender instanceof Player){
-	    	if(strtolower($cmd->getName()) == "trash")
+	    	if(strtolower($cmd->getName()) == "bin")
 		    {
 		    	$gui = new Inventory($sender);
 		    	$gui->send($sender);
